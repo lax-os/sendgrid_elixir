@@ -3,7 +3,7 @@ defmodule SendGrid.Mixfile do
 
   def project do
     [app: :sendgrid,
-     version: "2.0.0",
+     version: "2.0.1",
      elixir: "~> 1.4",
      package: package(),
      compilers: compilers(Mix.env),
@@ -45,8 +45,8 @@ defmodule SendGrid.Mixfile do
       {:earmark,      "~> 1.2",  only: :dev},
       {:ex_doc,       "~> 0.19", only: :dev},
       {:jason, "~> 1.1"},
-      {:phoenix,      "~> 1.2", only: :test},
-      {:phoenix_html, "~> 2.9", only: :test},
+      {:phoenix,      "~> 1.6", only: :test},
+      {:phoenix_html, "~> 3.2", only: :test},
       {:tesla, "~> 1.2"}
     ]
   end
